@@ -7,6 +7,3 @@ CSS is used to style the fog elements and create the animation effect.
 Getting Started
 Clone this repository to your local machine.
 Open the index.html file in a web browser.
-Enjoy the mesmerizing fog animation!
-Credits
-This experiment is inspired by creative coding and aims to explore the possibilities of JavaScript and CSS animations.
