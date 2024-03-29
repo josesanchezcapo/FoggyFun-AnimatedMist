@@ -1,39 +1,43 @@
+/* Reset default margin and padding for the body */
 body {
     margin: 0;
     padding: 0;
-    background-color: black;
+    background-color: black; /* Set background color to black */
   }
   
+  /* Styling for the fog layer */
   .fog-layer {
-    position: fixed;
+    position: fixed; /* Position fixed so it covers the entire viewport */
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
+    width: 100%; /* Cover the entire width of the viewport */
+    height: 100%; /* Cover the entire height of the viewport */
+    z-index: 1; /* Ensure it's above other content */
+    pointer-events: none; /* Make it non-interactable */
   }
   
+  /* Styling for the fog elements */
   .fog {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.4);
-    width: 100%;
-    height: 100%;
-    animation: fogMove linear infinite;
+    position: absolute; /* Position absolute to overlay on top of the fog layer */
+    background-color: rgba(255, 255, 255, 0.4); /* White mist with 40% opacity */
+    width: 100%; /* Cover the entire width of its container */
+    height: 100%; /* Cover the entire height of its container */
+    animation: fogMove linear infinite; /* Apply fog movement animation */
   }
   
+  /* Keyframes for fog movement animation */
   @keyframes fogMove {
     0% {
-      transform: translateY(0) scale(1);
-      opacity: 1;
+      transform: translateY(0) scale(1); /* Initial position and scale */
+      opacity: 1; /* Full opacity */
     }
     50% {
-      transform: translateY(-50%) scale(1.2);
-      opacity: 0.6;
+      transform: translateY(-50%) scale(1.2); /* Move halfway up and slightly increase scale */
+      opacity: 0.6; /* Reduced opacity */
     }
     100% {
-      transform: translateY(-100%) scale(1);
-      opacity: 1;
+      transform: translateY(-100%) scale(1); /* Move to the top and revert scale */
+      opacity: 1; /* Full opacity */
     }
   }
   
